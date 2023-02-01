@@ -1,6 +1,8 @@
 # HaganSBA
 To run - download the zip / folder, open it in your IDE, then run the html page in a browser. The scripts, styles, images, etc. should all be set up and included in the .zip as well.
 
+All files located in the resources folder - static folder breaks down into views (html), styles (css), images, and scripts (js). Web Content folder includes the bootstrap files.
+
 Requirements:
 HTML
 
