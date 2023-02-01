@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SBA - Home</title>
+<link rel = "stylesheet" href = "../styles/style.css" type = "text/css">
+<link rel = "stylesheet" href = "../../Web Content/css/bootstrap.min.css" type = "text/css">
+<script type="text/javascript" src = "../scripts/script.js"></script>
+<script type="text/javascript" src = "../../Web Content/js/bootstrap.bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+<style>
+body, html {
+	height: 100%;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+	<!-- Navigation bar using bootstrap -->
+	<nav class = "navbar navbar-expand-lg navbar-light bg-light">
+		<div class = "container-fluid">
+			<a class = "navbar-brand" href = "home.html">
+				<img src = "../images/masters.png" alt = "The Masters" width = "150px" height = "50px">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class = "navbar-toggler-icon"></span>
+			</button>
+			<div class = "collapse navbar-collapse" id = "navbarDropdown">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link active" aria-current = "page" href = "home.html">Home</a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "about.html">About</a>
+					</li>
+					<li class = "nav-item">
+						<a class = "nav-link" href = "contact.html">Contact</a>
+					</li>
+					<li class = "nav-item dropdown">
+						<a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdownMenuLink" role = "button" data-bs-toggle = "dropdown" aria-expanded = "false">Past Winners</a>
+						<ul class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
+							<li><a class = "dropdown-item" href = "winners2022.html">2022</a></li>
+							<li><a class = "dropdown-item" href = "winners2021.html">2021</a></li>
+							<li><a class = "dropdown-item" href = "winners2020.html">2020</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main header - the same across all pages, just with different texts -->
+	<div class="header">
+		<div class="caption">
+			<span class="caption-border">The Masters</span>
+		</div>
+		<div class="subcaption">
+			<span class="sub-border">Scroll to take a look at an overview of one of the biggest golf major championships in the history of the game.</span>
+		</div>
+	</div>
+
+	<!-- Home / Overview information -->
+	<div class = "content-area">
+		<div class = "container">
+			<h3>Overview of the Masters</h3>
+			<p>The Masters is one of the four major championships in professional golf and is held annually in April at the Augusta National Golf 
+			Club in Augusta, Georgia. It is a 72-hole stroke play tournament, with a field of approximately 90 players. The winner of the tournament 
+			receives a green jacket, which has become one of the most iconic prizes in all of sports. The tournament is known for its strict dress code,
+			traditional menu, and its pristine course conditions. The Masters has a rich history and has been won by some of the greatest golfers of all
+			time, including Jack Nicklaus, Tiger Woods, and Jordan Spieth.</p>
+		</div>
+	</div>
+	
+	<div class = "masterspic1"></div>
+	
+	<!-- Newsletter signup using bootstrap forms -->
+	<div class = "content-area">
+		<div class = "container">
+			<h3>Sign up for Our Newsletter!</h3>
+			<p>To stay up to date with the most recent information, sign up for our newsletter below! Gain information about The Masters right away!</p>
+			<form name = "newsletterForm" onsubmit = "validateFormOne()" action = "#" id = "test">
+				<div class = "row">
+					<div class = "form-group col-md-6">
+						<label for = "firstName">First Name</label>
+						<input type = "text" class = "form-control" id = "firstName" placeholder = "First Name">
+					</div>
+					<div class = "form-group col-md-6">
+						<label for = "lastName">Last Name</label>
+						<input type = "text" class = "form-control" id = "lastName" placeholder = "Last Name">
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "form-group col-md-6">
+						<label for = "address">Address</label>
+						<input type = "text" class = "form-control" id = "address" placeholder = "Address">
+					</div>
+					<div class = "form-group col-md-6">
+						<label for = "emailAddress">Email Address</label>
+						<input type = "email" class = "form-control" id = "emailAddress" placeholder = "Email">
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "form-group col-md-6">
+						<label for = "city">City</label>
+						<input type = "text" class = "form-control" id = "city" placeholder = "City">
+					</div>
+					<div class = "form-group col-md-4">
+						<label for = "state">State</label>
+						<input type = "text" class = "form-control" id = "state" placeholder = "State">
+					</div>
+					<div class = "form-group col-md-2">
+						<label for = "zipCode">ZIP Code</label>
+						<input type = "text" class = "form-control" id = "zipCode" placeholder = "ZIP">
+					</div>
+				</div>
+				<div class = "form-group">
+					<div class = "form-check">
+						<input class = "form-check-input" type = "checkbox" id = "termAgreement" required>
+						<label class = "form-check-label" for = "termAgreement">I consent to being contacted at the email provided.</label>
+					</div>
+				</div>
+				<button type = "submit" class = "btn btn-primary">Submit</button>
+			</form>
+			<p id = "submitConfirm"></p>
+		</div>
+	</div>
+
+	<footer id = "sticky-footer" class = "flex-shrink: 0 py-4 bg-dark text-white-50">
+		<div class = "container text-center">
+			Augusta National Golf Course --- Augusta, Georgia --- 2604 Washington Rd
+		</div>
+	</footer>
+</body>
+</html>

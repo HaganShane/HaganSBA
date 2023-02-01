@@ -1,0 +1,92 @@
+@charset "ISO-8859-1";
+
+.caption {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+}
+
+.subcaption {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.caption-border {
+	background-color: yellow;
+	color: green;
+	padding: 20px;
+	font-size: 30px;
+	letter-spacing: 10px;
+}
+
+.sub-border {
+	background-color: yellow;
+	color: green;
+	padding: 20px;
+	font-size: 12px;
+}
+
+.header {
+	background-image: url("../images/mastersbackground.jpg");
+}
+
+.masterspic1 {
+	background-image: url("../images/mastershole1.jpg");
+}
+
+.masterspic2 {
+	background-image: url("../images/mastershole2.jpg");
+}
+
+.masterspic3 {
+	background-image: url("../images/mastershole3.jpg");
+}
+
+.header, .masterspic1, .masterspic2, .masterspic3 {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	min-height: 85%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	opacity: .8;
+}
+
+.golfgif {
+	display: inline-flex;
+	float: right;
+	margin: 50px 50px 50px;
+}
+
+.content-area {
+	background-color: #009170;
+	padding: 50px 80px;
+	min-height: 40%;
+	min-width: 60%;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 20px;
+}
+
+.content-area table {
+	background-color: white;
+}
+
+.content-area form {
+	color: white;
+}
+
+.container h3 {
+	color: yellow;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+#winner td {
+	color: green;
+}

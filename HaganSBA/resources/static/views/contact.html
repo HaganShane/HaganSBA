@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SBA - Contact</title>
+<link rel="stylesheet" href="../styles/style.css" type="text/css">
+<link rel="stylesheet" href="../../Web Content/css/bootstrap.min.css"
+	type="text/css">
+<script type="text/javascript" src="../scripts/script.js"></script>
+<script type="text/javascript"
+	src="../../Web Content/js/bootstrap.bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+	rel="stylesheet">
+<style>
+body, html {
+	height: 100%;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+	<!-- Navigation bar using bootstrap -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="home.html"> <img
+				src="../images/masters.png" alt="The Masters" width="150px"
+				height="50px">
+			</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="home.html">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="contact.html">Contact</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#"
+						id="navbarDropdownMenuLink" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false">Past Winners</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="winners2022.html">2022</a></li>
+							<li><a class="dropdown-item" href="winners2021.html">2021</a></li>
+							<li><a class="dropdown-item" href="winners2020.html">2020</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main header - the same across all pages, just with different texts -->
+	<div class="header">
+		<div class="caption">
+			<span class="caption-border">Contact</span>
+		</div>
+		<div class="subcaption">
+			<span class="sub-border">If you wish to contact us with
+				regards to this site, please use the form below.</span>
+		</div>
+	</div>
+
+	<!-- Contact form using bootstrap -->
+	<div class="content-area">
+		<div class="container">
+			<h3>Contact Us</h3>
+			<p>If you have any questions or concerns, please contact us using
+				the form below</p>
+			<form name="contactForm" onsubmit="validateFormTwo()" action="#">
+				<div class="row">
+					<div class="form-group col-md-6">
+						<label for="contactFirstName">First Name</label> <input
+							type="text" class="form-control" id="contactFirstName"
+							placeholder="First Name">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="contactLastName">Last Name</label> <input type="text"
+							class="form-control" id="contactLastName" placeholder="Last Name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6">
+						<label for="phoneNumber">Phone Number</label> <input type="text"
+							class="form-control" id="phoneNumber" placeholder="Phone Number">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="contactEmailAddress">Email Address</label> <input
+							type="email" class="form-control" id="contactEmailAddress"
+							placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="userComments">Inquiry: </label>
+					<textarea class="form-control" rows="5" id="userComments"></textarea>
+				</div>
+				<div class="form-group">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="termAgreement"
+							required> <label class="form-check-label"
+							for="termAgreement">I agree to be contacted at the email
+							or phone number provided.</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Footer using bootstrap -->
+	<footer id="sticky-footer"
+		class="flex-shrink: 0 py-4 bg-dark text-white-50">
+		<div class="container text-center">Augusta National Golf Course
+			--- Augusta, Georgia --- 2604 Washington Rd</div>
+	</footer>
+</body>
+</html>
